@@ -1,0 +1,43 @@
+.username-inp{
+    padding: 15px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+}
+
+.container 
+{
+    display: flex;
+    align-items: center;
+    min-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    width: 111px;
+    height: 20px;
+    border: 1px solid yellowgreen;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+label ::before{
+    display: inline-block;
+    border: 1px solid #0000;
+    background-color: blue;
+    content: '';
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+#checkid:checked + label {
+    background-color: rgb(209, 146, 52);
+}
+
+#checkid {
+    display: none;
+}
